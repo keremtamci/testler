@@ -17,5 +17,5 @@ sort subdomainsonuc.txt -u >> subsonuc.txt
 cat subsonuc.txt| waybackurls > sonuc.txt
 echo "Buradaki islem icerige bagli olarak uzun surecek..."
 cat sonuc.txt | httpx --status-code -silent >> sonasama.txt
-cat sonasama.txt | grep -v .css | grep -v .png | grep -v .jpg | grep -v .gif | grep -v .xls | grep -v .docs | grep -v 404 | grep -v pdf >> bitti.txt
+cat sonasama.txt | grep -v .css | grep -v .png | grep -v .jpg | grep -v .gif | grep -v .xls | grep -v .docx | grep -v 404 | grep -v pdf >> bitti.txt
 echo "cat bitti.txt inceleyin."
